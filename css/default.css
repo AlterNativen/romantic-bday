@@ -2,11 +2,17 @@
 #mainDiv{width:100%;height:100%}
 #loveHeart{float:left;width:670px;height:625px}
 #garden{width:100%;height:100%}
-#elapseClock{text-align:right;font-size:18px;margin-top:10px;margin-bottom:10px}
+#elapseClock {
+    position: absolute; /* Allows manual positioning */
+    top: 37px; /* Adjust vertical position */
+    left: 72px; /* Adjust horizontal position */
+    text-align: center;
+    font-size: 18px;
+}
 #words{font-family:"sans-serif";width:500px;font-size:24px;color:#666}
 #messages{display:none;text-align: center;font-size: 30px}
 #elapseClock .digit{font-family:"digit";font-size:40px;text-align: center;}
-#loveu{padding:5px;font-size:22px;margin-top:80px;margin-right:120px;text-align:right;display:none}
+#loveu{padding:5px;font-size:22px;margin-top:110px;margin-right:145px;text-align:right;display:none}
 #loveu .signature{margin-top:10px;font-size:20px;font-style:italic}
 #clickSound{display:none}
 #code{float:left;width:440px;height:400px;color:#333;font-family:"Consolas","Monaco","Bitstream Vera Sans Mono","Courier New","sans-serif";font-size:12px}
@@ -19,3 +25,14 @@
 #copyright a{color:#666}
 #icon{font-size: 48px;color: red;margin: 50 px; align-content: center;}
 #heartspan{align-content: center;text-align: center;margin: 20px;}
+#loveu .signature {
+    position: relative; /* Allows precise manual adjustments */
+    margin-top: 10px;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+    top: 10px; /* Adjust the vertical position */
+    left: 260px; /* Adjust the horizontal position */
+    transform: translate(-50%, -50%); /* Fine-tune centering if needed */
+}
