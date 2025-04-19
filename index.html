@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
@@ -21,52 +21,55 @@
 <body>
 
 <div id="mainDiv">
-	<div id="content">
-		<div id="code">
-			<span class="comments">/**</span><br />
-			<span class="space"/><span class="comments">*THE CODE OF LOVE</span><br />
-			<span class="space"/><span class="comments">*/</span><br />
-			Hey Mochi<br />
-			Do you remember the day we first met?<br />
-			<span class="comments">// In front of the ICICI Bank at Astron Chowk <3 . </span><br />
-			Since that day everything began<br />
-			<span class="comments">// Your company just has always been so warm</span><br />
-			We became closer and closer to each other as time went on <br />
-			Neither of us knows how we grew so close<br />
-			But we did...<br />
-			And here we are<br />
-			These 4 months have gone by so fast<br />
-			But I feel like I've lived every single second of them <br />
-			<span class="comments">// We've got so many more too look forward to</span><br />
-			Thank you for everything you've done for me <br />
-			<br>
-			<br>
-			I love you Durva<br />
-			I wish you the Happiest Birthday ever;<br />
-			<br>
-			<br>
-			Now If you want to see the surprise video click the heart<br />
-			<br>
-			<span id="heartspan">
-			<a href="https://drive.google.com/file/d/1Of1d9RpF0FhCEpye5JqL8iESgIxC4ine/view?usp=sharing" target="_blank"><i class="fas fa-heart" id="icon"></i></a>
-			</span>
-		</div>
-			</span>
-		</div>
-		<div id="loveHeart">
-			<canvas id="garden"></canvas>
-			<div id="words">
-				<div id="messages">
-					To many more 
-					<div id="elapseClock"></div>
-				</div>
-				<div id="loveu">
-					I love you so much<br/>
-					<div class="signature">- Jash</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div id="content">
+        <!-- The code block -->
+        <div id="code">
+            <span class="comments">/**</span><br />
+            <span class="space"/><span class="comments">*THE CODE OF LOVE</span><br />
+            <span class="space"/><span class="comments">*/</span><br />
+            Hey Mochi<br />
+            Do you remember the day we first met?<br />
+            <span class="comments">// In front of the ICICI Bank at Astron Chowk <3 . </span><br />
+            Since that day everything began<br />
+            <span class="comments">// Your company just has always been so warm</span><br />
+            We became closer and closer to each other as time went on <br />
+            Neither of us knows how we grew so close<br />
+            But we did...<br />
+            And here we are<br />
+            These 4 months have gone by so fast<br />
+            But I feel like I've lived every single second of them <br />
+            <span class="comments">// We've got so many more too look forward to</span><br />
+            Thank you for everything you've done for me <br />
+            <br>
+            <br>
+            I love you Durva<br />
+            I wish you the Happiest Birthday ever;<br />
+            <br>
+            <br>
+            Now If you want to see the surprise video click the heart<br />
+            <br>
+            <span id="heartspan">
+                <a href="https://drive.google.com/file/d/1Of1d9RpF0FhCEpye5JqL8iESgIxC4ine/view?usp=sharing" target="_blank">
+                    <i class="fas fa-heart" id="icon"></i>
+                </a>
+            </span>
+        </div>
+
+        <!-- The garden heart block -->
+        <div id="loveHeart">
+            <canvas id="garden"></canvas>
+            <div id="words">
+                <div id="messages">
+                    To many more 
+                    <div id="elapseClock"></div>
+                </div>
+                <div id="loveu">
+                    I love you so much<br/>
+                    <div class="signature">- Jash</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script type="text/javascript">
@@ -80,26 +83,26 @@ together.setSeconds(0);
 together.setMilliseconds(0);
 
 if (!document.createElement('canvas').getContext) {
-	var msg = document.createElement("div");
-	msg.id = "errorMsg";
-	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
-	document.body.appendChild(msg);
-	$("#code").css("display", "none")
-	$("#copyright").css("position", "absolute");
-	$("#copyright").css("bottom", "10px");
-	document.execCommand("stop");
+    var msg = document.createElement("div");
+    msg.id = "errorMsg";
+    msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+    document.body.appendChild(msg);
+    $("#code").css("display", "none")
+    $("#copyright").css("position", "absolute");
+    $("#copyright").css("bottom", "10px");
+    document.execCommand("stop");
 } else {
-	setTimeout(function () {
-		startHeartAnimation();
-	}, 5000);
+    setTimeout(function () {
+        startHeartAnimation();
+    }, 5000);
 
-	timeElapse(together);
-	setInterval(function () {
-		timeElapse(together);
-	}, 500);
+    timeElapse(together);
+    setInterval(function () {
+        timeElapse(together);
+    }, 500);
 
-	adjustCodePosition();
-	$("#code").typewriter();
+    adjustCodePosition();
+    $("#code").typewriter();
 }
 </script>
 </body>
